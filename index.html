@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="main-screen" onclick="toggleMenu()"></div>
+
+    <div class="modal">
+        <div class="modal-content flex">
+            <h2 class="modal-title">Join us to get access to te latest stories!</h2>
+            <p class="modal-text">Send us an email and we'll make sure to keep you updated.</p>
+            <input class="modal-input" placeholder="example@domain.com" type="email" id="email" name="email">
+            <div class="modal-buttons">
+                <button onclick="openModal()" class="modal-close-btn">Close</button>
+                <button onclick="submitEmail()" class="modal-submit-btn">Send Email</button>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header">
+
+            <div class="header-container main-container flex space-between align-center">
+                <div class="logo">Blogin<span>.</span></div>
+
+                <ul class="nav-bar clean-list flex">
+                    <li><a class="flex nav-item align-center justify-content" href="#">Journal</a></li>
+                    <li><a class="flex nav-item align-center justify-content" href="#">About</a>
+                        <!-- <div class="Journals">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div> -->
+                    </li>
+                    <li><a class="flex nav-item align-center justify-content" href="#">Work</a></li>
+                    <li><a class="flex nav-item align-center justify-content" href="#">Contact</a></li>
+                </ul>
+                <!-- ☰ -->
+                <button class="menu-btn" onclick="toggleMenu()"><img class="menu-svg" src="svg/VisualEditor_-_Icon_-_Menu.svg.png"></button>
+
+            </div>
+    </header>
+
+    <main class="posts-container main-container">
+
+        <article class="post flex">
+
+            <div class="img-container flex">
+                <img class="post-image" src="images/image1.png">
+            </div>
+
+            <div class="post-content flex direction-column space-between">
+                <h2 class="post-title">FSDF SDGSDG SGSGA GAD ASDASDSA ASD ASD ASD </h2>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus libero incidunt.</p>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus libero incidunt sint? Beatae dignissimos natus impedit velit quaerat.</p>
+                <button onclick="openModal()" class="post-btn btn-1">Continue Reading</button>
+            </div>
+
+        </article>
+
+        <article class="post flex">
+
+            <div class="img-container flex">
+                <img class="post-image" src="images/image2.png">
+            </div>
+
+            <div class="post-content flex direction-column space-between">
+                <h2 class="post-title">FSDF SDGSDG SGSGA GAD ASDASDSA ASD ASD ASD </h2>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus libero incidunt.</p>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus libero incidunt sint? Beatae dignissimos natus impedit velit quaerat.</p>
+                <button onclick="openModal()" class="post-btn btn-2">Continue Reading</button>
+            </div>
+        </article>
+
+        <article class="post flex">
+
+            <div class="img-container flex">
+                <img class="post-image" src="images/image3.png">
+            </div>
+
+            <div class="post-content flex direction-column space-between">
+                <h2 class="post-title">FSDF SDGSDG SGSGA GAD ASDASDSA ASD ASD ASD </h2>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus libero incidunt.</p>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus libero incidunt sint? Beatae dignissimos natus impedit velit quaerat.</p>
+                <button onclick="openModal()" class="post-btn btn-3">Continue Reading</button>
+            </div>
+        </article>
+
+        <div class="paging main-container flex space-between align-center">
+            <a class="prev">← PREVIOUS</a>
+            <a class="next">NEXT →</a>
+        </div>
+
+    </main>
+
+
+    <footer class="main-footer">
+
+        <div class="footer-container main-container flex direction-column justify-content align-center">
+
+            <div class="logo">Blogin<span>.</span></div>
+
+            <small>© 2014 Blogin.com  -  All Rights Reserved  -  Find more free Templates at <span>Pixelhint.com</span></small>
+
+            <ul class="social-links clean-list flex">
+                <li>
+                    <a href="#" class="fa fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-instagram"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
