@@ -96,7 +96,7 @@ img {
 }
 
 .main-container {
-    max-width: 981px;
+    max-width: 980px;
     margin: 0 auto;
 }
 
@@ -240,6 +240,9 @@ img {
     object-fit: cover;
 }
 
+
+/* TODO: Put the modal in a flex container to center it. */
+
 .modal {
     display: none;
     opacity: 0;
@@ -305,6 +308,9 @@ img {
     flex: 1;
     justify-content: space-between;
 }
+
+
+/* Quest: Can I place multiple transitions? */
 
 body.modal-show .modal {
     display: flex;
@@ -524,7 +530,7 @@ body.modal-show .post-btn {
     }
     body.menu-open .nav-bar {
         transform: translateX(0);
-        transition: transform 0.8s;
+        transition: all 0.8s;
         box-shadow: -4px 0px 20px 0px #ffffffc4;
     }
     body.menu-open .main-screen {
