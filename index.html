@@ -12,14 +12,16 @@
 <body>
     <div class="main-screen" onclick="toggleMenu()"></div>
 
-    <div class="modal">
-        <div class="modal-content flex">
-            <h2 class="modal-title">Join us to get access to te latest stories!</h2>
-            <p class="modal-text">Send us an email and we'll make sure to keep you updated.</p>
-            <input class="modal-input" placeholder="example@domain.com" type="email" id="email" name="email">
-            <div class="modal-buttons">
-                <button onclick="openModal()" class="modal-close-btn">Close</button>
-                <button onclick="submitEmail()" class="modal-submit-btn">Send Email</button>
+    <div class="modal-cont flex justify-content align-center">
+        <div class="modal">
+            <div class="modal-content flex">
+                <h2 class="modal-title">Join us to get access to te latest stories!</h2>
+                <p class="modal-text">Send us an email and we'll make sure to keep you updated.</p>
+                <input class="modal-input" placeholder="example@domain.com" type="email" id="email" name="email">
+                <div class="modal-buttons">
+                    <button onclick="openModal()" class="modal-close-btn">Close</button>
+                    <button onclick="submitEmail()" class="modal-submit-btn">Send Email</button>
+                </div>
             </div>
         </div>
     </div>
@@ -30,16 +32,15 @@
             <div class="logo">Blogin<span>.</span></div>
 
             <ul class="nav-bar clean-list flex">
-                <li><a class="flex nav-item align-center justify-content" href="#">Journal</a></li>
-                <li><a class="flex nav-item align-center justify-content" href="#">About</a>
-                    <!-- <div class="Journals">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div> -->
+                <li class="journal"><a class="flex nav-item align-center justify-content" href="#">Journal</a>
+                    <ul class="dropdown flex clean-list">
+                        <li>October 2016</li>
+                        <li>January 2017</li>
+                        <li>April 2017</li>
+                        <li>July 2017</li>
+                    </ul>
                 </li>
+                <li><a class="flex nav-item align-center justify-content" href="#">About</a></li>
                 <li><a class="flex nav-item align-center justify-content" href="#">Work</a></li>
                 <li><a class="flex nav-item align-center justify-content" href="#">Contact</a></li>
             </ul>
